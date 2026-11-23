@@ -1,0 +1,11 @@
+{
+  // Serves this repo as a static site on Cloudflare Workers (no build step).
+  // "name" must match the Worker's name in the Cloudflare dashboard.
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "buildbyzero",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./",
+    "not_found_handling": "404-page"
+  }
+}
