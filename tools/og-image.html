@@ -1,0 +1,82 @@
+<!doctype html>
+<!--
+  Source for assets/og-image.jpg (1200x630 social preview).
+  Regenerate from the repo root (macOS) with:
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --hide-scrollbars \
+      --window-size=1200,630 --screenshot=/tmp/og.png "file://$PWD/tools/og-image.html"
+    sips -s format jpeg -s formatOptions 88 /tmp/og.png --out assets/og-image.jpg
+  Pages serves this file too; _headers marks it noindex.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    background: #0b0b12;
+    color: #f5f4fa;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+  }
+  .glow { position: absolute; inset: 0;
+    background:
+      radial-gradient(520px 420px at 78% 40%, rgba(214, 51, 108, .45), transparent 70%),
+      radial-gradient(460px 380px at 95% 85%, rgba(91, 42, 134, .55), transparent 70%),
+      radial-gradient(380px 300px at 8% 0%, rgba(255, 138, 91, .18), transparent 70%); }
+  .left { position: absolute; left: 76px; top: 70px; width: 640px; }
+  .brand { display: flex; align-items: center; gap: 16px; font-size: 34px; font-weight: 800; letter-spacing: -.01em; }
+  .brand img { width: 64px; height: 64px; }
+  h1 { font-size: 64px; line-height: 1.04; letter-spacing: -.035em; font-weight: 900; margin: 54px 0 26px; }
+  .grad { background: linear-gradient(135deg, #ff8a5b 0%, #d6336c 55%, #b46be0 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .sub { font-size: 26px; color: #a8a6ba; margin: 0; line-height: 1.4; }
+  .pills { position: absolute; left: 76px; bottom: 62px; display: flex; gap: 12px; }
+  .pill { font-size: 20px; font-weight: 700; padding: 10px 20px; border-radius: 999px; background: rgba(255,255,255,.07); border: 1px solid #2c2c3e; }
+  .pill.play { background: linear-gradient(135deg, #ff8a5b, #d6336c 55%, #5b2a86); border: 0; color: #fff; }
+
+  .phone { position: absolute; right: 96px; top: 44px; width: 284px; height: 560px; border-radius: 46px; padding: 10px; background: #050508;
+    box-shadow: 0 0 0 1px #2b2b3a, 0 40px 90px -20px rgba(214, 51, 108, .6); transform: rotate(6deg); }
+  .phone::after { content: ""; position: absolute; top: 20px; left: 50%; width: 86px; height: 22px; margin-left: -43px; background: #050508; border-radius: 20px; }
+  .screen { height: 100%; border-radius: 37px; overflow: hidden; position: relative; color: #fff;
+    background: linear-gradient(135deg, #232526, #7b6f5b); padding: 92px 26px 0; }
+  .screen::before { content: ""; position: absolute; top: -60px; right: -70px; width: 220px; height: 220px; border-radius: 50%; background: rgba(255,255,255,.1); }
+  .chip { display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: .16em; border: 1px solid rgba(255,255,255,.4); border-radius: 999px; padding: 5px 10px; margin-bottom: 16px; }
+  .screen h3 { font-size: 30px; line-height: 1.06; letter-spacing: -.02em; margin: 0; font-weight: 900; }
+  .rule { width: 28px; height: 3px; border-radius: 2px; background: rgba(255,255,255,.7); margin: 14px 0 12px; }
+  .screen p { margin: 0; font-size: 15px; line-height: 1.5; color: rgba(255,255,255,.88); }
+  .try { display: block; margin-top: 20px; font-size: 9px; font-weight: 800; letter-spacing: .18em; color: rgba(255,255,255,.55); }
+  .try + p { font-style: italic; font-size: 13.5px; margin-top: 4px; }
+  .from { position: absolute; left: 24px; bottom: 36px; display: flex; gap: 10px; align-items: center; font-size: 13px; line-height: 1.25; }
+  .from i { font-style: normal; display: block; font-size: 8px; font-weight: 800; letter-spacing: .14em; color: rgba(255,255,255,.6); }
+  .from b { display: block; font-size: 14px; }
+  .from span { color: rgba(255,255,255,.7); }
+  .badge { width: 30px; height: 38px; border-radius: 4px; border: 1px solid rgba(255,255,255,.45); display: grid; place-items: center; font-weight: 900; font-size: 15px; background: rgba(255,255,255,.12); }
+</style>
+</head>
+<body>
+  <div class="glow"></div>
+  <div class="left">
+    <div class="brand"><img src="../assets/logo.svg" alt="">Librospark</div>
+    <h1>Big ideas from great books, <span class="grad">one swipe at a time.</span></h1>
+    <p class="sub">Key ideas from 30 classic self-improvement books,<br>with one small thing to try today.</p>
+  </div>
+  <div class="pills">
+    <span class="pill play">Free on Google Play</span>
+    <span class="pill">No ads</span>
+    <span class="pill">Works offline</span>
+  </div>
+
+  <div class="phone">
+    <div class="screen">
+      <span class="chip">✦ KEY IDEA</span>
+      <h3>Control what you can</h3>
+      <div class="rule"></div>
+      <p>Some things are up to you — your judgments, choices and actions. The rest is not. Peace comes from focusing only on the first group.</p>
+      <span class="try">TRY TODAY</span>
+      <p>Sort one worry into “mine” or “not mine”.</p>
+      <div class="from"><span class="badge">M</span><div><i>IDEAS FROM</i><b>Meditations</b><span>Marcus Aurelius</span></div></div>
+    </div>
+  </div>
+</body>
+</html>

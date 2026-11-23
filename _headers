@@ -1,0 +1,12 @@
+# Cloudflare Pages response headers (this file itself is not served).
+
+# Keep the *.pages.dev copies (production alias and previews) out of search
+# results so only https://librospark.com is indexed.
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+# Repo files that Pages serves but search engines should ignore.
+/tools/*
+  X-Robots-Tag: noindex
+/wrangler.jsonc
+  X-Robots-Tag: noindex
